@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Taquería Los Tres Mosqueteros - Los mejores tacos en Bogotá.">
+  <title>Taquería Los Tres Mosqueteros</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc;
+      color: #4b2e2e;
+    }
+
+    header {
+      background-color: #8b4513;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #d2691e;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      display: none;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #8b4513;
+    }
+
+    .menu-item {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #4b2e2e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Taquería Los Tres Mosqueteros</h1>
+    <p>¡Todos para uno... y todos por los tacos!</p>
+  </header>
+
+  <nav>
+    <a onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a onclick="mostrarSeccion('menu')">Menú</a>
+    <a onclick="mostrarSeccion('contacto')">Contacto</a>
+  </nav>
+
+  <section id="inicio" class="active">
+    <h2>¡Bienvenido al paraíso del taco!</h2>
+    <p>En nuestra taquería, cada taco cuenta una historia: de tradición, de sabor y de puro amor por la cocina mexicana. Usamos ingredientes frescos, salsas caseras y recetas auténticas que te harán volver una y otra vez. Ya sea que prefieras los clásicos al pastor, los suculentos de barbacoa o una opción más atrevida, aquí encontrarás el taco perfecto para cada antojo. ¡Ven y descubre por qué nuestros tacos no se olvidan!</p>
+
+    <h2>Historia</h2>
+    <p>Todo comenzó en 2025, cuando tres estudiantes universitarios —Eyner, David y Stiven— decidieron unir sus talentos para crear algo especial. Cansados de los horarios interminables y la comida cara del campus, comenzaron a experimentar con recetas de tacos los fines de semana en casa de la abuela de Eyner. Su sazón pronto se volvió famoso entre amigos y vecinos.</p>
+    <p>Con ahorros justos y muchas ganas, montaron un pequeño puesto en una esquina de Chapinero. Usaron una plancha prestada, una sombrilla vieja y una cartulina hecha a mano con el nombre "Los Tres Mosqueteros", en honor a su amistad inseparable. Lo que empezó como una forma de cubrir sus gastos universitarios se transformó en una pasión.</p>
+    <p>Hoy, Taquería Los Tres Mosqueteros es mucho más que un negocio: es un homenaje a la perseverancia, a la comida honesta y al espíritu joven. Cada taco que servimos sigue llevando ese toque casero y esa energía con la que comenzamos en la calle.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menú</h2>
+    <div class="menu-item"><strong>Taco al pastor</strong> - 4.500</div>
+    <div class="menu-item"><strong>Taco de barbacoa</strong> - 5.000</div>
+    <div class="menu-item"><strong>Taco de carnitas</strong> - 5.000</div>
+    <div class="menu-item"><strong>Taco de chorizo</strong> - 4.800</div>
+    <div class="menu-item"><strong>Taco de suadero</strong> - 5.200</div>
+    <div class="menu-item"><strong>Taco de bistec</strong> - 5.000</div>
+    <div class="menu-item"><strong>Taco de pollo asado</strong> - 4.500</div>
+    <div class="menu-item"><strong>Taco de camarón</strong> - 6.500</div>
+    <div class="menu-item"><strong>Taco de pescado</strong> - 6.000</div>
+    <div class="menu-item"><strong>Taco vegano (soya y champiñones)</strong> - 5.000</div>
+    <div class="menu-item"><strong>Taco de lengua</strong> - 5.500</div>
+    <div class="menu-item"><strong>Taco campechano</strong> - 5.800</div>
+    <div class="menu-item"><strong>Taco gringo</strong> - 5.000</div>
+    <div class="menu-item"><strong>Taco de cochinita pibil</strong> - 5.800</div>
+    <div class="menu-item"><strong>Taco de tripa dorada</strong> - 5.200</div>
+    <div class="menu-item"><strong>Taco norteño</strong> - 6.000</div>
+    <div class="menu-item"><strong>Taco de chile relleno</strong> - 5.000</div>
+    <div class="menu-item"><strong>Taco de tinga de pollo</strong> - 4.800</div>
+    <div class="menu-item"><strong>Taco de champiñones al ajillo</strong> - 4.800</div>
+    <div class="menu-item"><strong>Taco especial de la casa</strong> - 6.500</div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Dirección: Calle 26 #45-67, Bogotá, Colombia</p>
+    <p>Teléfono: 3116151297</p>
+    <p>Horario: Lunes a Domingo, 12:00 p.m. a 11:00 p.m.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Taquería Los Tres Mosqueteros. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('section');
+      secciones.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
